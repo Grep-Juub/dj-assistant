@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class Config:
@@ -7,7 +10,7 @@ class Config:
     SECRET_KEY = os.environ.get("SECRET_KEY") or "hard_to_guess_secret_key"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = (
-        os.environ.get("DATABASE_URL") or "postgresql://spotify:mygeneratedpassword@localhost:5432/spotifydb"
+        os.environ.get("DATABASE_URL") or "postgresql://spotify:mygeneratedpassword@localhost:5432/spotify"
     )
 
     # Spotify API configurations

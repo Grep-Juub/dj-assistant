@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs by Genre</title>
+</head>
+<body>
+    <h1>Summary of Liked Songs</h1>
+    <p>Total Liked Tracks: {{ total_tracks }}</p>
+
+    <h2>Songs by Genre:</h2>
+    <ul>
+    {% for genre, count in genre_counts.items() %}
+        <li>{{ genre }}: {{ count }} tracks</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

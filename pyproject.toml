@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "spotify_dj_tool"
+version = "0.1.0"
+description = "A tool to classify Spotify liked songs and create DJ playlists."
+authors = ["Your Name <youremail@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^2.0.1"
+spotipy = "^2.18.0"
+sqlalchemy = "^2.0.21"
+flask-sqlalchemy = "^3.1.1"
+psycopg2 = "^2.9.7"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[tool.poetry.group.dev.dependencies]
+hupper = "^1.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

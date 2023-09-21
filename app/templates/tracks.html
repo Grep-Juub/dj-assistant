@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Liked Songs</title>
+</head>
+<body>
+    <h1>Your Liked Songs</h1>
+    <ul>
+    {% for track, artist in tracks %}
+        <li>{{ artist }} - {{ track }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
+
